@@ -16,7 +16,7 @@ class ScrabbleWord
 
 	def score
 		array = @word.chars # put word into array of letters
-		array.map! { |letter| @@score_sheet[:"#{letter}"] } # replace each letter by its score in array
+		array.map! { |letter| @@score_sheet[:"#{letter}"] } # replace each letter by its score in the array
 		array.inject(0, :+) # return sum of scores
 	end
 
